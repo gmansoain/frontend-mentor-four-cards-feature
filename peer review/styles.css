@@ -1,0 +1,172 @@
+:root {
+    /* colors */
+    /* colors neutral */
+    --clr-grey-500: #4D4F62;
+    --clr-grey-400: #6A7178;
+    --clr-white: #FFFFFF;
+
+    /* colors primary */
+    --clr-red: #EA5454;
+    --clr-cyan: #44D3D2;
+    --clr-blue: #549EF2;
+    --clr-orange: #FCAE4A;
+
+    /* spacing */
+    --spacing-500: 2.5rem; /*40px*/
+    --spacing-400: 2rem;   /*32px*/
+    --spacing-300: 1.5rem; /*24px*/
+    --spacing-200: 1rem;   /*16px*/
+    --spacing-100: 0.5rem; /*8px*/
+}
+
+/* Typography */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+.text-preset-1 {
+    font-size: clamp(1.3rem, 2vw, 2.25rem);
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-2 {
+    font-size: clamp(1.3rem, 2vw, 2.25rem);
+    font-weight: 200;
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0px;
+}
+
+.text-preset-4 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+.text-preset-5 {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0px;
+}
+
+.container {
+    width: 85%;
+    max-width: 800px;
+    justify-self: center;
+    justify-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-block-start: var(--spacing-500);
+}
+
+.description {
+    margin-block-start: var(--spacing-200);
+    max-width: 545px;
+}
+
+.main {
+    margin-block-start: var(--spacing-500);
+    /* border: 2px solid var(--clr-grey-500); */
+}
+
+.features {
+    display: grid;
+    gap: var(--spacing-400);
+}
+
+.feature {
+    padding: var(--spacing-400);
+    background-color: var(--clr-white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    /* border: 2px solid var(--clr-grey-500); */
+}
+
+.feature--supervisor {
+    border-top: 4px solid var(--clr-cyan);
+}
+
+.feature--team-builder {
+    border-top: 4px solid var(--clr-red);
+}
+
+.feature--karma {
+    border-top: 4px solid var(--clr-orange);
+}
+
+.feature--calculator {
+    border-top: 4px solid var(--clr-blue);
+}   
+
+.feature-icon {
+    margin-block-start: var(--spacing-400);
+    margin-left: auto;
+}
+
+/* Tablet */
+@media (min-width: 41rem) {
+    .main.container {
+        max-width: 1100px;
+    }
+
+    .features {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+
+    .feature--team-builder {
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+
+    .feature--calculator {
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+}
+
+/* Desktop */
+@media (min-width: 48rem) {
+
+    .features {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .feature--team-builder {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .feature--supervisor {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    .feature--calculator {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .feature--karma {
+        grid-column: 2/3;
+        grid-row: 3/5;
+    }
+}

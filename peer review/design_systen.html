@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding: 3rem 5rem;
+            margin: 0;
+        }
+
+        .neutral__colors {
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .wrapper {
+            flex: 1;
+        }
+
+        .neutral__colors--container {
+            width: 100%;
+            height: 6em;
+            border-radius: 0.5rem;
+        }
+
+        .grey-500 {
+            background-color: var(--clr-grey-500);
+        }
+        .grey-400 {
+            background-color: var(--clr-grey-400);
+        }
+
+        .white {
+            background-color: var(--clr-white);
+            border: 1px solid var(--clr-grey-400);
+        }
+
+        .colors__section, 
+        .neutral__colors, 
+        .primary__colors,
+        .typography__section,
+        .spacing__section {
+            margin-block-start: 4em;
+        }
+
+         .primary__colors {
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .primary__colors--container {
+            width: 100%;
+            height: 6em;
+            border-radius: 0.5rem;
+        }
+
+        .red {
+            background-color: var(--clr-red);
+        }
+
+        .cyan {
+            background-color: var(--clr-cyan);
+        }
+
+        .blue {
+            background-color: var(--clr-blue);
+        }
+
+        .orange {
+            background-color: var(--clr-orange);
+        }
+
+        .space__container {
+            display: flex;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .spacing-500 {
+            width: 0;
+            height: 4em;
+            background-color: var(--clr-grey-500);
+            padding-inline: var(--spacing-500);
+        }
+        .spacing-400 {
+            width: 0;
+            height: 4em;
+            background-color: var(--clr-grey-500);
+            padding-inline: var(--spacing-400);
+        }
+        .spacing-300 {
+            width: 0;
+            height: 4em;
+            background-color: var(--clr-grey-500);
+            padding-inline: var(--spacing-300);
+        }
+        .spacing-200 {
+            width: 0;
+            height: 4em;
+            background-color: var(--clr-grey-500);
+            padding-inline: var(--spacing-200);
+        }
+        .spacing-100 {
+            width: 0;
+            height: 4em;
+            background-color: var(--clr-grey-500);
+            padding-inline: var(--spacing-100);
+        }
+
+        .typography__section--container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4em;
+            margin-block-start: 2.5em;
+        }
+
+        .text-data + .text-data {
+            margin-block-start: 4.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Style Guide</h1>
+    </header>
+    <main>
+        <!-- Colors Section -->
+        <section class="colors__section">
+            <h2>Colors</h2>
+            <div class="neutral__colors">
+                <div class="wrapper">
+                    <div class="grey-500 neutral__colors--container"></div>
+                    <h3>Grey 500</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #4D4F62</p>
+                        <p><span>RGB</span> &nbsp; 77, 79, 98</p>
+                        <p><span>HSL</span> &nbsp; 234, 12%, 34%</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="grey-400 neutral__colors--container"></div>
+                    <h3>Grey 400</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #6A7178</p>
+                        <p><span>RGB</span> &nbsp; 106, 113, 120</p>
+                        <p><span>HSL</span> &nbsp; 212, 6%, 44%</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="white neutral__colors--container"></div>
+                    <h3>White</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #FFFFFF</p>
+                        <p><span>RGB</span> &nbsp; 255, 255, 255</p>
+                        <p><span>HSL</span> &nbsp; 0, 0%, 100%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="primary__colors">
+                <div class="wrapper">
+                    <div class="red primary__colors--container"></div>
+                    <h3>Red</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #EA5454</p>
+                        <p><span>RGB</span> &nbsp; 234, 84, 84</p>
+                        <p><span>HSL</span> &nbsp; 0, 78%, 62%</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="cyan primary__colors--container"></div>
+                    <h3>Cyan</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #44D3D2</p>
+                        <p><span>RGB</span> &nbsp; 68, 211, 210</p>
+                        <p><span>HSL</span> &nbsp; 180, 62%, 55%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="primary__colors">
+                <div class="wrapper">
+                    <div class="blue primary__colors--container"></div>
+                    <h3>Blue</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #549EF2</p>
+                        <p><span>RGB</span> &nbsp; 84, 158, 242</p>
+                        <p><span>HSL</span> &nbsp; 212, 86%, 64%</p>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="orange primary__colors--container"></div>
+                    <h3>Orange</h3>
+                    <div>
+                        <p><span>HEX</span> &nbsp; #FCAE4A</p>
+                        <p><span>RGB</span> &nbsp; 252, 174, 74</p>
+                        <p><span>HSL</span> &nbsp; 34, 97%, 64%</p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <!-- Spacing Section -->
+        <section class="spacing__section">
+            <h2>Spacing</h2>
+            <div class="space__container">
+                <div>
+                    <span>500</span> &nbsp; <span>40px</span>
+                    <p class="spacing-500"></p>
+                 </div>
+                <div>
+                    <span>400</span> &nbsp; <span>32px</span>
+                    <p class="spacing-400"></p>
+                </div>
+                <div>
+                    <span>300</span> &nbsp; <span>24px</span>
+                    <p class="spacing-300"></p>
+                </div>
+                <div>
+                    <span>200</span> &nbsp; <span>16px</span>
+                    <p class="spacing-200"></p>
+                </div>
+                <div>
+                    <span>100</span> &nbsp; <span>8px</span>
+                    <p class="spacing-100"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="typography__section">
+            <h2>Typography</h2>
+            <div class="typography__section--container">
+                <div>
+                    <div class="text-data">
+                        <span>Text Preset 1</span> &nbsp;<span>Poppins Semibold</span>
+                        <p>36px &nbsp; 140% Line Height &nbsp; 0.25px Letter Spacing</p>
+                        <hr>
+                        <p class="text-preset-1">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    </div>
+                    <div class="text-data">
+                        <span>Text Preset 2</span> &nbsp;<span>Poppins Extra Light</span>
+                        <p>36px &nbsp; 140% Line Height &nbsp; 0.25px Letter Spacing</p>
+                        <hr>
+                        <p class="text-preset-2">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    </div>
+                    <div class="text-data">
+                        <span>Text Preset 3</span> &nbsp;<span>Poppins Semibold</span>
+                        <p>20px &nbsp; 135% Line Height &nbsp; 0px Letter Spacing</p>
+                        <hr>
+                        <p class="text-preset-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-data">
+                        <span>Text Preset 4</span> &nbsp;<span>Poppins Regular</span>
+                        <p>15px &nbsp; 140% Line Height &nbsp; 0px Letter Spacing</p>
+                        <hr>
+                        <p class="text-preset-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                    <div class="text-data">
+                        <span>Text Preset 5</span> &nbsp;<span>Poppins Regular</span>
+                        <p>13px &nbsp; 160% Line Height &nbsp; 0px Letter Spacing</p>
+                        <hr>
+                        <p class="text-preset-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
