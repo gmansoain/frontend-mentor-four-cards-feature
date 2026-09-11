@@ -34,8 +34,8 @@ The design shows a header block above a set of four feature cards. On mobile the
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/gmansoain/frontend-mentor-four-cards-feature.git
+- Live Site URL: https://gon-four-cards-feature.netlify.app/
 
 ## My process
 

@@ -140,6 +140,22 @@ body {
     align-items: center;
 }
 
+/* FOOTER */
+
+.attribution { 
+    font-size: 0.6875rem;
+    margin-block-start: 3em;
+    padding: .5em;
+    text-align: center;
+    color: rgb(3, 146, 248);
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
 @media (min-width: 48rem) {
     body {
         width: 100%;
