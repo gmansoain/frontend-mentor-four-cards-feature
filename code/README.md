@@ -2,6 +2,8 @@
 
 This is my solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help improve coding skills by building realistic projects.
 
+![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FDifficulty-newbie-%236abecd?style=for-the-badge&logo=Frontend%20mentor&label=Diffilcuty&labelColor=%23555555&color=%236abecd)
+
 ## Table of contents
 
 - [Overview](#overview)

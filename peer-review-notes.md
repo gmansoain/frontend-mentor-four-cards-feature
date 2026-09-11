@@ -72,14 +72,14 @@ They shipped a **living style guide** — a stand-alone HTML page that renders t
 
 **Takeaway:** For any project with a design system worth naming, ship a `design-system.html` alongside `index.html`. Cheap insurance, huge signal of intent.
 
-### 4. BEM-flavored naming (`feature--supervisor`)
+  ### 4. BEM-flavored naming (`feature--supervisor`)
 
-Each card is `.feature .feature--supervisor` etc. — the base class holds shared styles, the modifier class holds the color variant:
+  Each card is `.feature .feature--supervisor` etc. — the base class holds shared styles, the modifier class holds the color variant:
 
-```css
-.feature { padding: ...; border-radius: 8px; }
-.feature--supervisor { border-top: 4px solid var(--clr-cyan); }
-```
+  ```css
+  .feature { padding: ...; border-radius: 8px; }
+  .feature--supervisor { border-top: 4px solid var(--clr-cyan); }
+  ```
 
 Compare to my solution, which uses `:nth-child()` selectors. Their approach is **more expressive** and **doesn't break** if I reorder the cards in HTML. My version couples visual color to DOM position — theirs couples visual color to semantic name. Theirs is better.
 
